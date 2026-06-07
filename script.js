@@ -296,6 +296,12 @@ function openItemModal(id, type, mediaSrc, author, desc, audioSrc){
 
     imgEl.style.display = "";
     imgEl.src = mediaSrc || "";
+    // Для книг — показуємо обкладинку повністю, без обрізання
+    if(type === "book"){
+        imgEl.classList.add("im-img-book");
+    } else {
+        imgEl.classList.remove("im-img-book");
+    }
     if(audioWrap) audioWrap.innerHTML = "";
 
     if(type === "music"){
