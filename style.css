@@ -1392,6 +1392,15 @@ footer{
     flex-shrink:0;
 }
 
+/* Книги — обкладинка повністю видна без обрізання */
+.im-img.im-img-book{
+    object-fit:contain;
+    height:420px;
+    background:rgba(0,0,0,.35);
+    padding:12px;
+    box-sizing:border-box;
+}
+
 .im-info{
     padding:24px;
     overflow-y:auto;
